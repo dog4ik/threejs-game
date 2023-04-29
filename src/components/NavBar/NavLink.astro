@@ -1,0 +1,8 @@
+---
+export type Props = { href: string; title: string };
+const { title, href } = Astro.props;
+---
+
+<li class="flex p-5 items-center justify-center">
+  <a class="text-2xl" href={href}>{title}</a>
+</li>
